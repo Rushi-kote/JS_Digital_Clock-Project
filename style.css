@@ -1,0 +1,450 @@
+body {
+    background-color: #3D087B;
+}
+
+.part1 {
+    text-align: right;
+    width: 50%;
+    height: auto;
+    display: inline-block;
+    /* outline: solid 2px red; */
+}
+
+.part1-child1 {
+    display: inline-block;
+    top: 34px;
+    left: 124px;
+    width: 204px;
+    height: 77px;
+    /* UI Properties */
+    background: transparent url('./clock_logo.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin-right: 125px;
+}
+
+
+
+.part1-child2 {
+    display: inline-block;
+    top: -16px;
+    left: 0;
+    width: 166px;
+    height: 57px;
+    letter-spacing: 0px;
+    color: #858585;
+    background-color: #FFFFFF;
+    color: #858585;
+    position: relative;
+    text-align: left;
+    border-radius: 5px;
+}
+
+.part1-child2 div {
+    height: 10px;
+    width: 10px;
+    transform: rotate(45deg);
+    display: inline-block;
+    background-color: #FFFFFF;
+    position: relative;
+    top: -16px;
+    left: 106px;
+}
+
+.part1-child3 {
+    width: 517px;
+    height: 335px;
+    opacity: 1;
+    display: inline-block;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 8px;
+}
+
+.settime {
+    width: 517px;
+    height: 45px;
+    margin-top: 9px;
+    margin-right: 1px;
+}
+
+.settime-img {
+    top: 10px;
+    left: -40px;
+    width: 34px;
+    height: 34px;
+    opacity: 1;
+    display: inline-block;
+    position: relative;
+
+}
+
+#setlunchtime {
+    left: -39px;
+}
+#setnaptime {
+    left: -51px;
+}
+
+#img {
+    background: transparent url(./wake_up.png) 0% 0% no-repeat padding-box;
+}
+
+#img1 {
+    margin-right: 22px;
+    background: transparent url(./lunch_time.png) 0% 0% no-repeat padding-box;
+}
+
+#img2 {
+    margin-right: 33px;
+    background: transparent url(./nap_time.png) 0% 0% no-repeat padding-box;
+}
+
+#img3 {
+    margin-right: 22px;
+    background: transparent url(./wake_up.png) 0% 0% no-repeat padding-box;
+}
+
+.settime-txt {
+    text-align: left;
+    font: normal normal normal 18px/28px Manrope;
+    letter-spacing: 0px;
+    color: #3D087B;
+    opacity: 1;
+    display: inline-block;
+    position: relative;
+    left: -19px;
+}
+
+.div-input {
+    top: 163px;
+    left: 385px;
+    width: 281px;
+    height: 45px;
+    /* UI Properties */
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    border: 1px solid var(--unnamed-color-ededed);
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #EDEDED;
+    border-radius: 4px;
+    opacity: 1;
+    display: inline-block;
+    text-align: left;
+}
+
+#wakeup-time {
+    height: 100%;
+    width: 98%;
+}
+#lunch-time {
+    height: 100%;
+    width: 98%;
+}
+#nap-time {
+    height: 100%;
+    width: 98%;
+
+}
+#night-time {
+    height: 100%;
+    width: 98%;
+}
+
+.line {
+    top: 3px;
+    left: 42px;
+    width: 0px;
+    height: 33px;
+    border: 1px solid #C2C2C2;
+    opacity: 1;
+    padding: 0;
+    position: relative;
+}
+
+.part1-child4 {
+    top: 0px;
+    left: 238px;
+    width: 483px;
+    height: 34px;
+    letter-spacing: 0px;
+    background-color: #7132b8;
+    border: 2px solid #7132b8;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+}
+
+.part1-child4 span {
+    text-align: left;
+    font: normal normal 900 20px/30px Bauhaus Hv BT;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    padding: 90px;
+}
+
+.part1-child5 {
+    top: 67px;
+    left: -261px;
+    width: 260px;
+    height: 50px;
+    background: transparent linear-gradient(113deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF 81%, #F1A7C5 100%) 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+
+.part1-child5 span {
+    top: 634px;
+    left: 218px;
+    width: 111px;
+    height: 31px;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-600) var(--unnamed-font-size-24)/var(--unnamed-line-spacing-38) var(--unnamed-font-family-manrope);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-ffffff);
+    text-align: left;
+    font: normal normal 600 24px/38px Manrope;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.part1-child6 {
+    top: 615px;
+    left: 437px;
+    width: 253px;
+    height: 117px;
+    display: inline-block;
+    text-align: left;
+
+}
+
+.part1-child6 span {
+
+    font: normal bold 15px/25px;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: left;
+    font: normal normal bold 15px/25px Manrope;
+    letter-spacing: 0px;
+    color: #F25CFE;
+    opacity: 1;
+}
+
+.part1-child7 {
+    top: -27px;
+    left: 167px;
+    width: 243px;
+    height: 64px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 30px #00000029;
+    opacity: 1;
+    text-align: left;
+    position: relative;
+    border-radius: 5px;
+    font: normal 14px/20px Inter;
+    font: normal normal normal 14px/20px Inter;
+    letter-spacing: 0px;
+    color: #858585;
+
+}
+
+
+.part1-child7 div {
+    height: 10px;
+    width: 10px;
+    transform: rotate(45deg);
+    display: inline-block;
+    background-color: #FFFFFF;
+    position: relative;
+    top: -30px;
+    left: 102px;
+
+}
+
+
+.part2 {
+    text-align: right;
+    width: 49%;
+    height: auto;
+    display: inline-block;
+    /* outline: solid 2px red; */
+    float: right;
+}
+
+#divunder {
+    top: 35px;
+    left: 70px;
+    width: 379px;
+    height: 100px;
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    opacity: 0.22;
+    position: relative;
+}
+
+#divunderdiv {
+    top: -75px;
+    left: 53px;
+    width: 416px;
+    height: 100px;
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    opacity: 0.71;
+    position: relative;
+}
+
+#divtime {
+    /* Layout Properties */
+    top: -198px;
+    left: 3px;
+    width: 536px;
+    height: 100px;
+    /* UI Properties */
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    border: 1px solid var(--unnamed-color-ededed);
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #EDEDED;
+    border-radius: 10px;
+    opacity: 1;
+    position: relative;
+}
+
+.inside-divtime {
+    top: 10px;
+    left: 80px;
+    width: 512px;
+    height: 90px;
+    opacity: 1;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+
+}
+
+#timetxt {
+    left: -70px;
+    width: 46px;
+    height: 26px;
+    text-align: left;
+    font: normal normal 600 20px/32px Manrope;
+    letter-spacing: 0px;
+    color: #3D087B;
+    text-transform: uppercase;
+    opacity: 1;
+    position: relative;
+    top: 25%;
+}
+
+.time {
+    top: -7px;
+    left: -28px;
+    width: 80px;
+    height: 90px;
+    background-image: url(./timeline@2x.png);
+    display: inline-block;
+    margin-left: 6px;
+    position: relative;
+
+}
+
+.numtime {
+    width: 100%;
+    height: 58px;
+    font: normal normal normal 36px/43px Barlow;
+    letter-spacing: 0px;
+    color: #8A11BF;
+    opacity: 1;
+    display: block;
+    text-align: center;
+}
+
+.numtime-txt {
+    width: 100%;
+    height: 25px;
+    display: block;
+    font: normal normal normal 23px/28px Barlow;
+    letter-spacing: 0px;
+    color: #5F0089;
+    opacity: 1;
+    margin-left: -10px;
+}
+
+.coln {
+    left: -26px;
+    width: 2px;
+    height: 22px;
+    opacity: 1;
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    color: #8A11BF;
+}
+
+.meridiem {
+    width: 82px;
+    height: 90px;
+    display: inline-block;
+    background-image: url(./AM_svg@2x.png);
+    position: relative;
+    top: -7px;
+    left: -12px;
+}
+
+.meridiem div {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font: normal normal normal 36px/43px Barlow;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    padding-top: 18px;
+}
+
+
+
+.tip {
+    top: -140px;
+    left: 0;
+    width: 536px;
+    height: 118px;
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    border: 1px solid var(--unnamed-color-ededed);
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #EDEDED;
+    border-radius: 10px;
+    opacity: 1;
+    position: relative;
+}
+
+.tip span {
+    top: 35px;
+    left: -4px;
+    width: 492px;
+    height: 38px;
+    /* font-weight: 800; */
+    /* letter-spacing: var(--unnamed-character-spacing-0); */
+    /* color: var(--unnamed-color-8e53f0); */
+    text-align: left;
+    font: normal normal 900 28px/40px Bauhaus Hv BT;
+    letter-spacing: 0px;
+    color: #8E53F0;
+    position: relative;
+}
+
+
+.image {
+    top: -119px;
+    left: 0;
+    width: 536px;
+    height: 341px;
+    background-image: url(./Component\ 30\ –\ 1@2x.png);
+    background-size: cover;
+    position: relative;
+}
