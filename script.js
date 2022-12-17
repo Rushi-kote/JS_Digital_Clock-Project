@@ -29,6 +29,13 @@ setAlarmBtn.addEventListener("click",function(){
     smmarynighttime.innerText= nightTime[nightTime.selectedIndex].value;
 });
 
+setAlarmBtn.addEventListener("mouseover",function(){
+    setAlarmBtn.innerText="Party Time!";
+});
+setAlarmBtn.addEventListener("mouseout",function(){
+    setAlarmBtn.innerText="Set Alarm";
+});
+
 
 function changeImageText(hourhand){
     if(hourhand>=10 && hourhand<=11){
