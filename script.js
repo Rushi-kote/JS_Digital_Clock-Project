@@ -40,7 +40,6 @@ setAlarmBtn.addEventListener("mouseout",function(){
 function changeImageText(hourhand){
     if(hourhand>=10 && hourhand<=11){
         tiptxt.innerText="GRAB SOME HEALTHY BREAKFAST!!!"
-        image[0].innerHTML=`style.backgroundImage = "url('./Component30–1@2x.png')"`;
     }else if(hourhand>=12 && hourhand<=16){
         tiptxt.innerText="LET'S HAVE SOME LUNCH !!"
         image[0].style.backgroundImage="url(./Group5183@2x.png)";
@@ -50,7 +49,10 @@ function changeImageText(hourhand){
     }else if(hourhand>=20 && hourhand<=24){
         tiptxt.innerText="CLOSE YOUR EYES AND GO TO SLEEP"
         image[0].style.backgroundImage="url(./Group5194@2x.png)";
-    }    
+    }else if(hourhand>=0 && hourhand<=9){
+        tiptxt.innerText="CLOSE YOUR EYES AND GO TO SLEEP"
+        image[0].style.backgroundImage="url(./Group5194@2x.png)";
+    }   
 }
 
 function time(){
