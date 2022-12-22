@@ -7,6 +7,7 @@ let wakeupTime = document.getElementById("wakeup-time");
 let napTime = document.getElementById("nap-time");
 let lunchTime = document.getElementById("lunch-time");
 let nightTime = document.getElementById("night-time");
+let timeBasedText = document.getElementById("timeBasedText");
 
 let setAlarmBtn = document.getElementById("setAlarmBtn");
 
@@ -40,19 +41,20 @@ setAlarmBtn.addEventListener("mouseout",function(){
 function changeImageText(hourhand){
     if(hourhand>=10 && hourhand<=11){
         tiptxt.innerText="GRAB SOME HEALTHY BREAKFAST!!!"
+        timeBasedText.innerText="GOOD MORNING!! WAKE UP !!";
     }else if(hourhand>=12 && hourhand<=16){
         tiptxt.innerText="LET'S HAVE SOME LUNCH !!"
+        timeBasedText.innerText="GOOD AFTERNOON !! TAKE SOME SLEEP";
         image[0].style.backgroundImage="url(./Group5183@2x.png)";
     }else if(hourhand>=17 && hourhand<=19){
         tiptxt.innerText="STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!"
+        timeBasedText.innerText="GOOD EVENING !!";
         image[0].style.backgroundImage="url(./lunch_image@2x.png)";
-    }else if(hourhand>=20 && hourhand<=24){
+    }else if((hourhand>=20 && hourhand<=24)|| (hourhand>=0 && hourhand<=9)){
         tiptxt.innerText="CLOSE YOUR EYES AND GO TO SLEEP"
+        timeBasedText.innerText="GOOD NIGHT !!";
         image[0].style.backgroundImage="url(./Group5194@2x.png)";
-    }else if(hourhand>=0 && hourhand<=9){
-        tiptxt.innerText="CLOSE YOUR EYES AND GO TO SLEEP"
-        image[0].style.backgroundImage="url(./Group5194@2x.png)";
-    }   
+    }  
 }
 
 function time(){
