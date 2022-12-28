@@ -38,23 +38,57 @@ setAlarmBtn.addEventListener("mouseout",function(){
 });
 
 
-function changeImageText(hourhand){
-    if(hourhand>=10 && hourhand<=11){
-        tiptxt.innerText="GRAB SOME HEALTHY BREAKFAST!!!"
-        timeBasedText.innerText="GOOD MORNING!! WAKE UP !!";
+function changeTipText(hourhand){
+    if(hourhand>=8 && hourhand<=11){
+        tiptxt.innerText="GOOD MORNING !!"
+        //timeBasedText.innerText="GOOD MORNING!! WAKE UP !!";
     }else if(hourhand>=12 && hourhand<=16){
-        tiptxt.innerText="LET'S HAVE SOME LUNCH !!"
-        timeBasedText.innerText="GOOD AFTERNOON !! TAKE SOME SLEEP";
-        image[0].style.backgroundImage="url(./Group5183@2x.png)";
+        tiptxt.innerText="GOOD AFTERNOON !!";
+        // timeBasedText.innerText="GOOD AFTERNOON !! TAKE SOME SLEEP";
+        // image[0].style.backgroundImage="url(./Group5183@2x.png)";
     }else if(hourhand>=17 && hourhand<=19){
-        tiptxt.innerText="STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!"
-        timeBasedText.innerText="GOOD EVENING !!";
-        image[0].style.backgroundImage="url(./lunch_image@2x.png)";
-    }else if((hourhand>=20 && hourhand<=24)|| (hourhand>=0 && hourhand<=9)){
-        tiptxt.innerText="CLOSE YOUR EYES AND GO TO SLEEP"
-        timeBasedText.innerText="GOOD NIGHT !!";
-        image[0].style.backgroundImage="url(./Group5194@2x.png)";
-    }  
+        tiptxt.innerText="GOOD EVENING !!";
+        // timeBasedText.innerText="GOOD EVENING !!";
+        // image[0].style.backgroundImage="url(./lunch_image@2x.png)";
+    }else if((hourhand>=20 && hourhand<=24)|| (hourhand>=0 && hourhand<=7)){
+        tiptxt.innerText="GOOD NIGHT !!"
+        // timeBasedText.innerText="GOOD NIGHT !!";
+        // image[0].style.backgroundImage="url(./Group5194@2x.png)";
+    }
+    
+}
+
+
+function updateImageAndText(hourhand){
+    let wakeupTimeArr=(smmarywaketime.innerText).split(" ");
+    let napTimeArr=(smmarynaptime.innerText).split(" ");
+    let lunchTimeArr=(smmarylunchtime.innerText).split(" ");
+    let nightTimeArr=(smmarynighttime.innerText).split(" ");
+
+    //console.log(wakeupTimeArr[0]+"=="+hourhand +"&&"+ ampm.innerText+"=="+wakeupTimeArr[1]);
+
+    if(parseInt(wakeupTimeArr[0])==hourhand && ampm.innerText==wakeupTimeArr[1]){
+        timeBasedText.innerText="GOOD MORNING!! WAKE UP !!";
+        image[0].style.backgroundImage="url(./Component30–1@2x.png)"; 
+        //console.log(wakeupTimeArr[0]+"=="+hourhand +"&&"+ ampm.innerText+"=="+wakeupTimeArr[1]); 
+    }else if(parseInt(lunchTimeArr[0])==hourhand && ampm.innerText==lunchTimeArr[1]){
+        timeBasedText.innerText="LET'S HAVE SOME LUNCH !!";
+        image[0].style.backgroundImage="url(./Group5183@2x.png)"; 
+        
+    }else if(parseInt(napTimeArr[0])==hourhand && ampm.innerText==napTimeArr[1]){
+        timeBasedText.innerText="STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!";
+        image[0].style.backgroundImage="url(./lunch_image@2x.png)"; 
+        
+    }else if(parseInt(nightTimeArr[0])==hourhand && ampm.innerText==nightTimeArr[1]){
+        timeBasedText.innerText="CLOSE YOUR EYES AND GO TO SLEEP";
+        image[0].style.backgroundImage="url(./Group5194@2x.png)"; 
+        
+    }else{
+        timeBasedText.innerText="Select time and click on set alarm ";
+        image[0].style.backgroundImage="url(./time-to-invest-represents-return-on-investment-and-growth.jpg)";
+        image[0].style.backgroundSize = "contain";
+    }
+
 }
 
 function time(){
@@ -62,9 +96,11 @@ function time(){
     let hourhand= timer.getHours();
     min.innerText= timer.getMinutes();
     sec.innerText= timer.getSeconds();
-    changeImageText(hourhand)
+    changeTipText(hourhand)
     convertTo12HFormat(hourhand);
+    updateImageAndText(hourhand);
     //console.log(hour.innerText);
+
     
 }
 
