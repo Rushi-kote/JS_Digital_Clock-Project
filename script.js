@@ -68,7 +68,8 @@ function updateImageAndText(hourhand){
     //console.log(wakeupTimeArr[0]+"=="+hourhand +"&&"+ ampm.innerText+"=="+wakeupTimeArr[1]);
 
     if(parseInt(wakeupTimeArr[0])==hourhand && ampm.innerText==wakeupTimeArr[1]){
-        timeBasedText.innerText="GOOD MORNING!! WAKE UP !!";
+        timeBasedText.innerText="GOOD MORNING!! WAKE UP !!"; 
+        console.log("wakeupTIme");   
         image[0].style.backgroundImage="url(./Component30–1@2x.png)"; 
         //console.log(wakeupTimeArr[0]+"=="+hourhand +"&&"+ ampm.innerText+"=="+wakeupTimeArr[1]); 
     }else if(parseInt(lunchTimeArr[0])==hourhand && ampm.innerText==lunchTimeArr[1]){
